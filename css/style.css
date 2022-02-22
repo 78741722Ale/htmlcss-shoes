@@ -1,0 +1,31 @@
+/* Regola di Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Palette Figma
+*******/
+:root{
+--Body:rgba(255,200,200,0.5);
+--PrimaSection:rgba(255, 0, 0, 1);
+--SecondaSection:rgba(0, 128, 0, 1);
+--TerzaSection:rgba(255, 255, 0, 1);
+--First_Text:rgba(255, 255, 0, 1);
+--Second_Text:rgba(0, 128, 0, 1);
+}
+
+/******* 
+Utilities
+*******/
+
+/* Font interno al Body */
+
+body {
+    font-family: 'Dela Gothic One', cursive;
+}
+
+
+
+

@@ -23,7 +23,62 @@ Utilities
 /* Font interno al Body */
 
 body {
+    width: 1000px;
     font-family: 'Dela Gothic One', cursive;
+    margin: auto 0;
+}
+
+/* Zona dei vari ID delle sezioni
+********/
+
+#First {
+    background-color: var(--PrimaSection);
+}
+
+#Second {
+    background-color: var(--SecondaSection); 
+}
+
+#Third {
+    background-color: var(--TerzaSection); 
+}
+
+.item {
+    width: 100%;
+    height: 100vh;
+}
+
+.object {
+    width: 700px;
+    height: 600px;
+    position: relative;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.object > img {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    object-fit: contain;
+    width: 100%;
+    height: 100%;
+}
+
+
+.Text {
+    text-align: center;
+    width: 400px;
+    height: 75px;
+    position: absolute;
+    top: 85%;
+    left: 50%;
+    word-spacing: 25px;
+    text-transform: uppercase;
+    color: var(--First_Text);
+    transform: translate(-50%);
 }
 
 

@@ -22,7 +22,7 @@ Utilities
 
 img {
     background-position: center;
-    width: 650px;
+    width: 600px;
     height: 550px;
     position: absolute;
     left: 50%;
@@ -39,7 +39,8 @@ img {
 
 .Text {
     text-align: center;
-    width: 400px;
+    font-size: xx-large;
+    width: 600px;
     height: 75px;
     position: absolute;
     bottom: 12rem;

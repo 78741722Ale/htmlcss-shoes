@@ -1,6 +1,6 @@
 /* Regola di Reset */
 * {
-    margin: 0;
+    margin: 0 auto;
     padding: 0;
     box-sizing: border-box;
 }
@@ -20,6 +20,30 @@
 Utilities
 *******/
 
+.Container {
+    margin: 0 auto;
+    width: 100%;
+    position: relative;
+}
+
+.item {
+    width: 100%;
+    height: 100vh;
+    position: relative;
+}
+
+.Text {
+    text-align: center;
+    width: 400px;
+    height: 75px;
+    position: absolute;
+    bottom: 1rem;
+    left: 50%;
+    word-spacing: 25px;
+    text-transform: uppercase;
+    transform: translate(-50%);
+}
+
 /* Font interno al Body */
 
 body {
@@ -27,23 +51,20 @@ body {
     font-family: 'Dela Gothic One', cursive;
 }
 
-.Container {
-    margin: 0;
-    width: 100%;
-}
-
-/* */
+/* NavBar
+*******/
 
 nav {
     width: max-content;
     height: max-content;
     position: absolute;
-    left: 70%;
+    left: 75%;
     top: 30px;
 }
 
-.btn
-{
+/* Bottoni della NavBar - Valido per Bonus */
+
+.btn {
     font-size: 0.75rem;
     float: left;
     color: black;
@@ -64,7 +85,6 @@ nav {
     margin-right: 30px;
 }
 
-
 .btn_style3 {
     padding: 3px 8px;
     border-radius: 50%;
@@ -73,36 +93,24 @@ nav {
 /* Zona dei vari ID delle sezioni
 ********/
 
+/* Prodotto Zona 1
+*****/
+
 #First {
     background-color: var(--PrimaSection);
     color: var(--First_Text);
 }
 
-#Second {
-    background-color: var(--SecondaSection); 
-    color: var(--First_Text);
-}
-
-#Third {
-    background-color: var(--TerzaSection); 
-    color: var(--Second_Text);
-}
-
-.item {
-    width: 100%;
-    height: 100vh;
-}
-
-.object {
+.object1 {
     width: 600px;
     height: 600px;
-    position: relative;
+    position: absolute;
     left: 50%;
     top: 50%;
     transform: translate(-50%, -50%);
 }
 
-.object > img {
+.object1 > img {
     position: absolute;
     left: 50%;
     top: 50%;
@@ -112,17 +120,46 @@ nav {
     height: 100%;
 }
 
-.Text {
-    text-align: center;
-    width: 400px;
-    height: 75px;
-    position: absolute;
-    bottom: 1rem;
-    left: 50%;
-    word-spacing: 25px;
-    text-transform: uppercase;
-    transform: translate(-50%);
+/* Prodotto Zona 2
+*****/
+
+#Second {
+    background-color: var(--SecondaSection); 
+    color: var(--First_Text);
 }
+
+.object2 {
+    width: 600px;
+    height: 600px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.object2 > img {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    object-fit: contain;
+    width: 100%;
+    height: 100%;
+}
+
+/* Prodotto Zona 3
+*****/
+
+#Third {
+    background-color: var(--TerzaSection); 
+    color: var(--Second_Text);
+}
+
+
+
+
+
+
 
 
 
